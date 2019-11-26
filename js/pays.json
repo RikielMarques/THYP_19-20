@@ -1,0 +1,304 @@
+var paysVisites = {"etudiants":[
+    {"num_etud": 17809465,
+		"data": {
+			"prenom": "Rikiel",
+			"nom": "Marques",
+			"pays": {
+				"France": 5,
+				"Portugal": 20,
+				"Russia": 1,
+				"Brazil": 2
+			}
+		}
+	},
+    {"num_etud": 17806261,
+		"data": {
+			"prenom": "Ahmed",
+			"nom": "Marzaq",
+			"pays": {
+				"France": 5,
+				"Morocco": 10,
+				"Mali": 1
+			}
+		}
+	},
+    {"num_etud": 19001145,
+		"data": {
+			"prenom": "Amir",
+			"nom": "Saoudi",
+			"pays": {
+				"France": 5,
+				"Argentina": 1,
+				"Austria": 2,
+				"Belgium": 20
+			}
+		}
+	},
+    {"num_etud": 19003554,
+		"data": {
+			"prenom": "Celia",
+			"nom": "Cherifi",
+			"pays": {
+				"France": 5,
+				"Bolivia": 1,
+				"Vietnam": 2,
+				"Syria": 20
+			}
+		}
+	},
+    {"num_etud": 19009903,
+		"data": {
+			"prenom": "Fatima-Ezzahrae",
+			"nom": "Lkifar",
+			"pays": {
+				"France": 5,
+				"Tunisia": 2
+			}
+		}
+	},
+    {"num_etud": 19003479,
+		"data": {
+			"prenom": "Ibrahima",
+			"nom": "Sene",
+			"pays": {
+				"France": 5,
+				"Uruguay": 1,
+				"Yemen": 2,
+				"Switzerland": 3
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Jihad",
+			"nom": "Bensassi",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Vietnam": 20,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	,
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Melissa",
+			"nom": "Hamaoui",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Mondir",
+			"nom": "Jaatar",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Vietnam": 20
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Naima",
+			"nom": "Aftab",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Nait Messaoud",
+			"nom": "Aghilas",
+			"pays": {
+				"France": 5,
+				"Slovakia": 2,
+				"Vietnam": 20,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Neftaha",
+			"nom": "Abbad Andaloussi",
+			"pays": {
+				"France": 5,
+				"Vietnam": 20,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Nestor",
+			"nom": "Pegane",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Nisrin",
+			"nom": "Mouggal",
+			"pays": {
+				"France": 5,
+				"Slovakia": 2,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Noussaiba",
+			"nom": "Boulila",
+			"pays": {
+				"France": 5,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Romann",
+			"nom": "Imounga",
+			"pays": {
+				"France": 5,
+				"Vietnam": 20
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Sam",
+			"nom": "Karout",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Sofiane",
+			"nom": "Hadjadj",
+			"pays": {
+				"France": 5,
+				"Slovakia": 2,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Thameur",
+			"nom": "Abdellatif",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Vietnam": 20,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Tinhinane",
+			"nom": "Messaoudi",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Vivien",
+			"nom": "Sundar",
+			"pays": {
+				"France": 5,
+				"Vietnam": 20,
+				"China": 2
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Yasmina",
+			"nom": "Elaziz",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Yasmine",
+			"nom": "Guessous",
+			"pays": {
+				"France": 5,
+				"Chile": 1,
+				"Slovakia": 2,
+				"Vietnam": 20,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Youssef",
+			"nom": "Dahi",
+			"pays": {
+				"France": 5,
+				"Chile": 1
+			}
+		}
+	},
+    {"num_etud": 17802309,
+		"data": {
+			"prenom": "Youva",
+			"nom": "Amouche",
+			"pays": {
+				"France": 5,
+				"Vietnam": 20,
+				"China": 2,
+				"Algeria": 4
+			}
+		}
+	}
+]}
