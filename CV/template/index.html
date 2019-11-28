@@ -125,9 +125,9 @@ var selectEtu;
             document.getElementById('etuCards').setAttribute('src', urlTof);
             document.getElementById('etudName').innerHTML = "" + dataForm[liste.value]["Votre prénom"] + " " + dataForm[liste.value]["Votre nom"];
             document.getElementById('etudSpec').innerHTML = "" + dataForm[liste.value]["Vos spécialités"];
-            document.getElementById('etudMail').innerHTML = "" + dataForm[liste.value]["Votre mail"];
+            document.getElementById('etudMail').innerHTML = "<a  href='mailto:" + dataForm[liste.value]["Votre mail"] + "'>" + dataForm[liste.value]["Votre mail"] + "</a>";
             document.getElementById('etudForma').innerHTML = "" + dataForm[liste.value]["Votre formation précédente"];
-            document.getElementById('etudMail2').innerHTML = "" + dataForm[liste.value]["Votre mail"];
+            document.getElementById('etudMail2').innerHTML = "<a  href='mailto:" + dataForm[liste.value]["Votre mail"] + "'>" + dataForm[liste.value]["Votre mail"] + "</a>";
 
             resetBoxes();
 
@@ -175,8 +175,6 @@ var selectEtu;
               break;
 
               case "je connais un peu": 
-              mesCompetences[0].push(competence);
-              mesCompetences[1].push(33);
               break;
 
               case "je connais bien": 
@@ -227,9 +225,7 @@ var selectEtu;
               case "je ne connais pas du tout":
               break;
 
-              case "je connais un peu": 
-              mesOutils[0].push(outil);
-              mesOutils[1].push(33);
+              case "je connais un peu":
               break;
 
               case "je connais bien": 
@@ -279,9 +275,7 @@ var selectEtu;
               case "je ne connais pas du tout":
               break;
 
-              case "je connais un peu": 
-              mesFrameworks[0].push(frame);
-              mesFrameworks[1].push(33);
+              case "je connais un peu":
               break;
 
               case "je connais bien": 
@@ -332,9 +326,7 @@ var selectEtu;
               case "je ne connais pas du tout":
               break;
 
-              case "je connais un peu": 
-              mesLangages[0].push(language);
-              mesLangages[1].push(33);
+              case "je connais un peu":
               break;
 
               case "je connais bien": 
@@ -586,7 +578,7 @@ var selectEtu;
             <div class="h4 mt-0 title">Informations</div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8" id="etudMail">rikiel.marques@gmail.com</div>
+              <div class="col-sm-8" id="etudMail"><a href="mailto:rikiel.marques@gmail.com">rikiel.marques@gmail.com</a></div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Formation précédente:</strong></div>
@@ -710,7 +702,7 @@ var selectEtu;
                 <div class="col-md-6">
                   <div class="card-body">
                     <form action="https://formspree.io/your@email.com" method="POST">
-                      <div class="p pb-3"><strong>Conctactez-moi </strong></div>
+                      <div class="p pb-3"><strong>Contactez-moi </strong></div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
