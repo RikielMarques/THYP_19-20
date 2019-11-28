@@ -8,6 +8,8 @@
     <meta name="cesium-sandcastle-labels" content="Beginner, Showcases">
     <title>Cesium Demo</title>
     <!--<script type="text/javascript" src="../Sandcastle-header.js"></script>-->
+    
+    <link rel="stylesheet" href="cesium.css">
     <script type="text/javascript" src="cesium/cesium-master/Apps/Sandcastle/Sandcastle-header.js"></script>
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Cesium.js"></script>
     <!--<script type="text/javascript" src="../CesiumUnminified/Cesium.js" ></script>-->
@@ -60,20 +62,36 @@ if (typeof Cesium !== 'undefined') {
     startup(Cesium);
 }
 </script>
-<!--
-<div style="background-color: yellow; width: 40px; height: 20px; border-color: 3px white; position: relative; margin: 2%;">
-</div>
-<p>1</p>
-<div style="background-color: blue; width: 40px; height: 20px; border-color: 3px white; position: relative; margin: 2%;">
-</div>
-<p>2</p>
-<div style="background-color: pink; width: 40px; height: 20px; border-color: 3px white; position: relative; margin: 2%;">
-</div>
-<p>3</p>
-<div style="background-color: green; width: 40px; height: 20px; border-color: 3px white; position: relative; margin: 2%;">
-</div>
-<p>4</p>
--->
 
+<div style="position: absolute; margin: 8% 2% 2% 2%;">
+    <p>Nombre de visites :</p>
+    <div class="row">
+        <div style="background-color: yellow;" class="label">
+        </div>
+        <p class="block">1</p>
+    </div>
+    <div class="row">
+        <div style="background-color: blue;" class="label">
+        </div>
+        <p class="block">2</p>
+    </div>
+    <div class="row">
+        <div style="background-color: red;" class="label">
+        </div>
+        <p class="block">3</p>
+    </div>
+    <div class="row">
+        <div style="background-color: green;" class="label">
+        </div>
+        <p class="block">4</p>
+    </div>
+    <div class="row">
+        <div style="background-color: pink;" class="label">
+        </div>
+        <p class="block">5+</p>
+    </div>
+</div>
+
+</div>
 </body>
 </html>
