@@ -87,10 +87,6 @@ let expertsBesoin = {'id':[],'nom':[]}
                     d.reponses.besoins.push({'prop':prop,'importance':n,'expression':v,'id':j});
                 }
                 if(i.indexOf("compétences")>0 && n){
-                    // console.log('prop', prop);
-                    // console.log('importance', n);
-                    // console.log('expression', v);
-                    // console.log('id', j);
                     d.reponses.competences.push({'prop':prop,'importance':n,'expression':v,'id':j});
                 }
                 if(i.indexOf("outils utilisez")>0){
@@ -162,19 +158,13 @@ let expertsBesoin = {'id':[],'nom':[]}
     });
 
     
-    // console.log('expertsCompetence', expertsCompetence);
 
     // 495
 
     let incrComp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    // for(let i; i++; competences.length){
-    //   incrComp[i] = 0;
-    // }
     dataForm[0].reponses.competences.forEach((competence, compIndex) =>{
     for(let i = compIndex; i<competencesGlobal.length; i += dataForm[0].reponses.competences.length){
-        // console.log('incrComp[compIndex] += val', incrComp[compIndex] += val);
         incrComp[compIndex] += competencesGlobal[i];
-        // compGlobIndex += competences.length;
     }
     incrComp[compIndex] = Math.round((incrComp[compIndex])/(dataForm.length));
     
@@ -183,22 +173,17 @@ let expertsBesoin = {'id':[],'nom':[]}
     let incrBes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     dataForm[0].reponses.besoins.forEach((besoin, besIndex) =>{
     for(let i = besIndex; i<besoinsGlobal.length; i += dataForm[0].reponses.besoins.length){
-        // console.log('incrComp[compIndex] += val', incrComp[compIndex] += val);
         incrBes[besIndex] += besoinsGlobal[i];
-        // compGlobIndex += competences.length;
     }
     incrBes[besIndex] = Math.round((incrBes[besIndex])/(dataForm.length));
     
     });
 
-    console.log('dataForm', dataForm);
-    console.log('incrComp', incrComp);
-    console.log('incrBes', incrBes);
-
 
 
     var compGlobBox = d3.select('#competencesGlobalId').selectAll(".col-md-12").data(incrComp).enter()
-            .append('div').attr('class','col-md-12')
+            .append('div').attr('class','col-md-12 tooltip-stat')
+            .html("<span class='tooltiptext'>Cliquez pour le détail de cette compétence</span>")
             .append('div').attr('class','progress-container progress-primary')
             .attr('id', function(d, i) {return "" + i})
             .attr('onclick', 'compBox(this.id)')
@@ -218,7 +203,8 @@ let expertsBesoin = {'id':[],'nom':[]}
             .attr('style', function(d, i) {return "width: " + d + "%;"});
 
     var besGlobBox = d3.select('#besoinsGlobalId').selectAll(".col-md-12").data(incrBes).enter()
-            .append('div').attr('class','col-md-12')
+            .append('div').attr('class','col-md-12 tooltip-stat')
+            .html("<span class='tooltiptext'>Cliquez pour le détail de ce besoin</span>")
             .append('div').attr('class','progress-container progress-primary')
             .attr('id', function(d, i) {return "" + i})
             .attr('onclick', 'besBox(this.id)')
@@ -334,6 +320,11 @@ let expertsBesoin = {'id':[],'nom':[]}
         -->
 
     
+        
+        <br>
+        <div class="h1 text-center mb-4 title">Compétences et besoins des étudiants</div>
+
+        
       <div class="container">
         <div class="row">
           <div class="section col-sm">

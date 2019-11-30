@@ -90,23 +90,10 @@
         }
         liste.onchange();
 
-        //charge les limites des pays
-        //var geojsonLayer = new L.GeoJSON.AJAX("js/countries.geo.json").addTo(map);
-
-        //défini l'échelle de couleur
-        // var colorScale = d3.scaleSequential()
-        //     .domain([0, 100])
-        //     .interpolator(d3['interpolatePlasma']);      
-        /*
-            var c = colorScale(20);
-            c = colorScale(0);
-            c = colorScale(100);
-        */      
         //définie le style du pays
         //merci à https://leafletjs.com/examples/choropleth/
         function onChangeStudent(){
             var paysVisitesEtudiant = {"type":"FeatureCollection", "features":[]};
-            console.log("paysVisitesEtudiant2", paysVisitesEtudiant);
             
             if(geoJsonLayers != null) 
                 geoJsonLayers.clearLayers()
@@ -118,9 +105,7 @@
 
             var nbAlea = d3.randomUniform(0, 100);
             function style(feature) {
-                // console.log("feature", feature);
                 return {
-                    //fillColor: colorScale(feature.properties.density),
                     fillColor: colorScale(1),
                     weight: 2,
                     opacity: 1,
@@ -130,20 +115,13 @@
                 };
             }
             //charge les limites des pays avec leur style
-            // console.log('state', statesData.features[0].properties.name);
-            console.log('etud', paysVisites.etudiants[0].data.pays);
-            // console.log(Object.keys(paysVisites.etudiants[0].data.pays));
             statesData.features.forEach(allCountries => {
                 Object.keys(currentStudentData.data.pays).forEach(studentCountries => {
                     if(allCountries.properties.name == studentCountries){
-                        // console.log("allCountries", allCountries);
                         paysVisitesEtudiant.features.push(allCountries);
-                        // console.log(paysVisites.etudiants[0].data.pays[allCountries.properties.name])
                     }
                 })
             });
-            console.log("paysVisitesEtudiant", paysVisitesEtudiant);
-            console.log("statesData", statesData);
             geoJsonLayers  = L.geoJson(paysVisitesEtudiant, {style: style}).addTo(map);
         }
 

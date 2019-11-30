@@ -1,0 +1,1 @@
+Au cours de ce semestre j'ai appris de nouvelles méthodes permettant d'effectuer ma veille, que je ne connaissais pas. Par exemple les outils Netvibes et Diigo, qui sont sont diponibles à la consultation

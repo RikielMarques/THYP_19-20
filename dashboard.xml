@@ -2,8 +2,8 @@
 <opml version="1.0">
  <head>
   <title>Personal Dashboard</title>
-  <type>Private</type>
-  <creationDate>2019-11-10 16:28:50</creationDate>
+  <type>Public</type>
+  <creationDate>2019-11-30 21:37:49</creationDate>
  </head>
  <body>
   <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">

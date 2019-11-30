@@ -100,7 +100,6 @@ var selectEtu;
     
     let etudIndex = 15;
 
-    console.log("dataForm", dataForm);
 
 
 
@@ -115,7 +114,6 @@ var selectEtu;
 
         liste.onchange = function(){
           if (liste.value != "") {
-            console.log(dataForm[etudIndex]);
             etudIndex = liste.value;
             let url = new URL(dataForm[liste.value]['Votre photo']);
             let urlParam = new URLSearchParams(url.search);
@@ -146,8 +144,6 @@ var selectEtu;
 
       function resetBoxes(){
         for(let box in progressBoxes){
-              console.log('box', box);
-              console.log('progressBoxes[box]', progressBoxes[box]);
               document.getElementById(progressBoxes[box]).innerHTML = "";
             }
       }
@@ -478,9 +474,7 @@ var selectEtu;
         // }
         dataForm[0].reponses.competences.forEach((competence, compIndex) =>{
           for(let i = compIndex; i<competencesGlobal.length; i += dataForm[0].reponses.competences.length){
-            // console.log('incrComp[compIndex] += val', incrComp[compIndex] += val);
             incrComp[compIndex] += competencesGlobal[i];
-            // compGlobIndex += competences.length;
           }
           incrComp[compIndex] = (incrComp[compIndex])/(dataForm.length);
           
@@ -489,9 +483,7 @@ var selectEtu;
         let incrBes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         dataForm[0].reponses.besoins.forEach((besoin, besIndex) =>{
           for(let i = besIndex; i<besoinsGlobal.length; i += dataForm[0].reponses.besoins.length){
-            // console.log('incrComp[compIndex] += val', incrComp[compIndex] += val);
             incrBes[besIndex] += besoinsGlobal[i];
-            // compGlobIndex += competences.length;
           }
           incrBes[besIndex] = (incrBes[besIndex])/(dataForm.length);
           
